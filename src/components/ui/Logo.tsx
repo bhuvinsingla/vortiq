@@ -3,9 +3,9 @@ type LogoProps = {
   markOnly?: boolean;
 };
 
-export default function Logo({ className = "h-8", markOnly = false }: LogoProps) {
+export default function Logo({ className = "h-11", markOnly = false }: LogoProps) {
   const src = markOnly ? "/vortiq-mark.png" : "/vortiq-logo.png";
-  const widthClass = markOnly ? "w-auto" : "w-auto max-w-[9.5rem] sm:max-w-[11rem]";
+  const widthClass = markOnly ? "w-auto" : "w-auto max-w-[14rem] sm:max-w-[17rem]";
 
   return (
     <img

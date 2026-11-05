@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
         <div>
           <a href="#top" className="inline-flex items-center" aria-label={company.name}>
-            <Logo className="h-10" />
+            <Logo className="h-14 sm:h-16" />
           </a>
           <p className="mt-3 max-w-xs">{company.intro}</p>
         </div>

@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/80 text-white backdrop-blur-lg">
-        <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main">
+        <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main">
           {/* Mobile Left: 3-line hamburger menu button + Logo */}
           <div className="flex items-center gap-3">
             <button
@@ -45,7 +45,7 @@ export default function Navbar() {
             </button>
 
             <a href="#top" className="flex items-center" aria-label={company.name}>
-              <Logo className="h-8 sm:h-9" />
+              <Logo className="h-12 sm:h-14" />
             </a>
           </div>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
           {/* Drawer Header with Logo and Close button */}
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <a href="#top" onClick={close} className="flex items-center" aria-label={company.name}>
-              <Logo className="h-9" />
+              <Logo className="h-12" />
             </a>
             <button
               type="button"
