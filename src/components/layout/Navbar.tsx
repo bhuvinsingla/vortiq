@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { company, navLinks } from "@/data/content";
 import Button from "@/components/ui/Button";
+import Logo from "@/components/ui/Logo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -43,9 +44,8 @@ export default function Navbar() {
               </svg>
             </button>
 
-            <a href="#top" className="text-xl sm:text-2xl font-extrabold tracking-tight">
-              {company.name}
-              <span className="text-brand">.</span>
+            <a href="#top" className="flex items-center" aria-label={company.name}>
+              <Logo className="h-8 sm:h-9" />
             </a>
           </div>
 
@@ -94,9 +94,8 @@ export default function Navbar() {
         <div>
           {/* Drawer Header with Logo and Close button */}
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
-            <a href="#top" onClick={close} className="text-2xl font-extrabold tracking-tight">
-              {company.name}
-              <span className="text-brand">.</span>
+            <a href="#top" onClick={close} className="flex items-center" aria-label={company.name}>
+              <Logo className="h-9" />
             </a>
             <button
               type="button"

@@ -1,11 +1,14 @@
 import { company, navLinks } from "@/data/content";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
     <footer className="bg-dark-gradient text-white/70">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
         <div>
-          <p className="text-2xl font-extrabold text-white">{company.name}<span className="text-brand">.</span></p>
+          <a href="#top" className="inline-flex items-center" aria-label={company.name}>
+            <Logo className="h-10" />
+          </a>
           <p className="mt-3 max-w-xs">{company.intro}</p>
         </div>
         <ul className="space-y-2">
