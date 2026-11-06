@@ -1,10 +1,14 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { company, navLinks } from "@/data/content";
 import Button from "@/components/ui/Button";
 import Logo from "@/components/ui/Logo";
+import { useScrollSolid } from "@/hooks/useScrollSolid";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const scrolled = useScrollSolid();
   const close = () => setOpen(false);
 
   // Lock background scroll and handle Escape key when mobile drawer is open
@@ -26,7 +30,13 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/80 text-white backdrop-blur-lg">
+      <header
+        className={`sticky top-0 z-50 border-b text-white backdrop-blur-lg transition-[background-color,box-shadow,border-color] duration-300 ${
+          scrolled
+            ? "border-white/15 bg-ink/95 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+            : "border-white/10 bg-ink/80 shadow-none"
+        }`}
+      >
         <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main">
           {/* Mobile Left: 3-line hamburger menu button + Logo */}
           <div className="flex items-center gap-3">
@@ -45,7 +55,7 @@ export default function Navbar() {
             </button>
 
             <a href="#top" className="flex items-center" aria-label={company.name}>
-              <Logo className="h-12 sm:h-14" />
+              <Logo className="h-12 sm:h-14" priority />
             </a>
           </div>
 
@@ -53,7 +63,7 @@ export default function Navbar() {
           <ul className="hidden items-center gap-8 text-sm font-medium md:flex">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-white/80 transition hover:text-white">
+                <a href={link.href} className="text-white/80 transition-colors duration-200 hover:text-brand-light">
                   {link.label}
                 </a>
               </li>

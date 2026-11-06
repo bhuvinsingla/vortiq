@@ -12,7 +12,12 @@ export default function CallToAction() {
         <p className="mt-4 max-w-xl text-lg text-white/85">
           Share your idea and get a clear plan, timeline and estimate within a week.
         </p>
-        <Button href="#contact" variant="light" className="mt-8">Start a conversation</Button>
+        <Button href="#contact" variant="light" className="btn-arrow mt-8">
+          Start a conversation
+          <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden>
+            <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Button>
       </Reveal>
     </section>
   );

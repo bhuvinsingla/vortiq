@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo, useState } from "react";
 import { projects } from "@/data/content";
 import type { ProjectCategory } from "@/types";
@@ -48,9 +50,9 @@ export default function Projects() {
       <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {visible.map((project) => (
           <li key={project.title}>
-            <article className="group h-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:-translate-y-1 hover:border-brand/60">
+            <article className="card-lift group h-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:border-brand/60 hover:shadow-xl hover:shadow-brand/20">
               <div className="relative h-44 overflow-hidden">
-                <div className={`absolute inset-0 bg-linear-to-br transition duration-500 group-hover:scale-110 ${covers[project.category]}`} />
+                <div className={`absolute inset-0 bg-linear-to-br transition duration-700 ease-out group-hover:scale-110 ${covers[project.category]}`} />
                 <div aria-hidden className="bg-grid absolute inset-0 opacity-60" />
                 <span className="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-bold backdrop-blur">
                   {project.category}

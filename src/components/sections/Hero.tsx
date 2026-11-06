@@ -23,24 +23,54 @@ export default function Hero() {
       <div aria-hidden className="bg-grid absolute inset-0" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2">
         <div>
-          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-white/80">
-            <span className="size-2 animate-pulse rounded-full bg-brand" />
+          <p
+            className="hero-enter mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-white/80"
+            style={{ animationDelay: "60ms" }}
+          >
+            <span className="relative flex size-2">
+              <span className="absolute inset-0 rounded-full bg-brand opacity-60 pip-pulse" />
+              <span className="relative size-2 rounded-full bg-brand" />
+            </span>
             Now taking new projects
           </p>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.08] tracking-tight">{company.tagline}</h1>
-          <p className="mt-6 max-w-lg text-base sm:text-lg text-white/70">{company.intro}</p>
-          <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-            <Button href="#work">View our work</Button>
+          <h1
+            className="hero-enter text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.08] tracking-tight"
+            style={{ animationDelay: "140ms" }}
+          >
+            {company.tagline}
+          </h1>
+          <p
+            className="hero-enter mt-6 max-w-lg text-base sm:text-lg text-white/70"
+            style={{ animationDelay: "240ms" }}
+          >
+            {company.intro}
+          </p>
+          <div
+            className="hero-enter mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4"
+            style={{ animationDelay: "340ms" }}
+          >
+            <Button href="#work" className="btn-arrow">
+              View our work
+              <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden>
+                <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Button>
             <Button href="#contact" variant="outline-light">Talk to us</Button>
           </div>
-          <ul className="mt-10 sm:mt-12 flex flex-wrap gap-x-6 sm:gap-x-8 gap-y-2 text-xs sm:text-sm text-white/60">
+          <ul
+            className="hero-enter mt-10 sm:mt-12 flex flex-wrap gap-x-6 sm:gap-x-8 gap-y-2 text-xs sm:text-sm text-white/60"
+            style={{ animationDelay: "440ms" }}
+          >
             <li>On-time delivery</li>
             <li>Dedicated team</li>
             <li>Post-launch support</li>
           </ul>
         </div>
 
-        <div className="relative flex h-[440px] sm:h-[500px] w-full items-center justify-center overflow-hidden sm:overflow-visible">
+        <div
+          className="hero-enter relative flex h-[440px] sm:h-[500px] w-full items-center justify-center overflow-hidden sm:overflow-visible"
+          style={{ animationDelay: "280ms" }}
+        >
           {/* Central vortex rings & glowing ambient backdrop */}
           <div className="stack absolute inset-0 place-items-center" aria-hidden>
             <div className="size-48 sm:size-64 rounded-full bg-brand/30 blur-3xl" />

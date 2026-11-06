@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { company } from "@/data/content";
 import Section from "@/components/ui/Section";

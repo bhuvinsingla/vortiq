@@ -9,10 +9,12 @@ import Process from "@/components/sections/Process";
 import Testimonials from "@/components/sections/Testimonials";
 import CallToAction from "@/components/sections/CallToAction";
 import Contact from "@/components/sections/Contact";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
-export default function App() { 
+export default function HomePage() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />
