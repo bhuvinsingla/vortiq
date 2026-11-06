@@ -22,12 +22,36 @@ export interface Service {
 
 export type ProjectCategory = "Web" | "Mobile" | "Cloud" | "AI";
 
+export interface AppScreen {
+  device: "web" | "mobile";
+  product: string;
+  caption: string;
+  metrics: { label: string; value: string }[];
+  rows: { label: string; meta: string }[];
+}
+
 export interface Project {
+  id: string;
   title: string;
   client: string;
+  vertical: string;
   category: ProjectCategory;
   summary: string;
+  description: string;
+  built: string[];
   result: string;
+  stack: string[];
+  screen: AppScreen;
+}
+
+export interface Vertical {
+  id: string;
+  label: string;
+  title: string;
+  description: string;
+  values: { value: string; label: string }[];
+  screen: AppScreen;
+  projectId: string;
 }
 
 export interface Stat {

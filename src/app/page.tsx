@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import TechStrip from "@/components/sections/TechStrip";
 import Services from "@/components/sections/Services";
+import Verticals from "@/components/sections/Verticals";
 import Projects from "@/components/sections/Projects";
 import Stats from "@/components/sections/Stats";
 import Process from "@/components/sections/Process";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Hero />
         <TechStrip />
         <Services />
+        <Verticals />
         <Projects />
         <Stats />
         <Process />

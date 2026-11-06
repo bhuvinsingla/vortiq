@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import { company } from "@/data/content";
+import { company, stats } from "@/data/content";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 
@@ -88,11 +88,11 @@ export default function Hero() {
                   <Icon name="code" className="size-4 sm:size-5" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-xl font-extrabold text-white">120+</div>
-                  <div className="text-[11px] sm:text-xs text-white/60">Projects Built</div>
+                  <div className="text-base sm:text-xl font-extrabold text-white">{stats[1].value}{stats[1].suffix}</div>
+                  <div className="text-[11px] sm:text-xs text-white/60">{stats[1].label}</div>
                 </div>
               </div>
-              <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] font-medium text-white/50">Web, Mobile & AI</p>
+              <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] font-medium text-white/50">Web, mobile, cloud, AI</p>
             </div>
 
             {/* Bubble 2: Client Rating / Satisfaction */}
@@ -102,14 +102,11 @@ export default function Hero() {
                   <Icon name="spark" className="size-4 sm:size-5" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-xl font-extrabold text-white">99%</div>
-                  <div className="text-[11px] sm:text-xs text-white/60">Rating</div>
+                  <div className="text-base sm:text-xl font-extrabold text-white">{stats[0].value}{stats[0].suffix}</div>
+                  <div className="text-[11px] sm:text-xs text-white/60">{stats[0].label}</div>
                 </div>
               </div>
-              <div className="mt-1.5 sm:mt-2 flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-brand-light">
-                <span>★★★★★</span>
-                <span className="text-[9px] sm:text-[10px] font-normal text-white/50">5.0 Star</span>
-              </div>
+              <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] font-medium text-white/50">Healthcare to supply chain</p>
             </div>
 
             {/* Bubble 3: Years of Experience */}
@@ -119,11 +116,11 @@ export default function Hero() {
                   <Icon name="compass" className="size-4 sm:size-5" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-xl font-extrabold text-white">8+ Years</div>
-                  <div className="text-[11px] sm:text-xs text-white/60">Experience</div>
+                  <div className="text-base sm:text-xl font-extrabold text-white">{stats[2].value}{stats[2].suffix}</div>
+                  <div className="text-[11px] sm:text-xs text-white/60">{stats[2].label}</div>
                 </div>
               </div>
-              <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] font-medium text-white/50">Proven Record</p>
+              <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] font-medium text-white/50">MediSync Portal</p>
             </div>
 
             {/* Bubble 4: On-time Delivery */}
@@ -133,13 +130,13 @@ export default function Hero() {
                   <Icon name="layout" className="size-4 sm:size-5" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-xl font-extrabold text-white">100%</div>
-                  <div className="text-[11px] sm:text-xs text-white/60">On-Time</div>
+                  <div className="text-base sm:text-xl font-extrabold text-white">{stats[3].value}{stats[3].suffix}</div>
+                  <div className="text-[11px] sm:text-xs text-white/60">{stats[3].label}</div>
                 </div>
               </div>
               <div className="mt-1.5 sm:mt-2 flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-white/60">
                 <span className="size-1.5 sm:size-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>SLA Guaranteed</span>
+                <span>PulseOps</span>
               </div>
             </div>
           </div>

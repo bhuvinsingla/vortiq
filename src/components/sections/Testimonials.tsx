@@ -4,7 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export default function Testimonials() {
   return (
-    <Section id="clients" tone="dark" title="What clients say">
+    <Section id="clients" tone="dark" title="What changed after launch">
       <ul className="grid gap-6 md:grid-cols-3">
         {testimonials.map((item, i) => (
           <Reveal as="li" key={item.quote} delay={i * 100}>
