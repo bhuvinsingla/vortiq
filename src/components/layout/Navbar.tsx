@@ -55,7 +55,7 @@ export default function Navbar() {
             </button>
 
             <a href="#top" className="flex items-center" aria-label={company.name}>
-              <Logo className="h-12 sm:h-14" priority />
+              <Logo className="h-10 sm:h-12" priority />
             </a>
           </div>
 
@@ -105,7 +105,7 @@ export default function Navbar() {
           {/* Drawer Header with Logo and Close button */}
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <a href="#top" onClick={close} className="flex items-center" aria-label={company.name}>
-              <Logo className="h-12" />
+              <Logo className="h-11" />
             </a>
             <button
               type="button"

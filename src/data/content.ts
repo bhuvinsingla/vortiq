@@ -15,8 +15,8 @@ export const company = {
   intro:
     "We design, build and run web, mobile, cloud and AI products for healthcare, logistics, retail, finance and industry.",
   email: "hello@vortiq.example",
-  phone: "+91 00000 00000",
-  whatsapp: "https://wa.me/910000000000",
+  phone: "+91 73556 35544",
+  whatsapp: "https://wa.me/917355635544",
   address: "Mohali, Punjab, India",
 };
 
