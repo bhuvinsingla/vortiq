@@ -17,7 +17,7 @@ export default function Footer() {
           ))}
         </ul>
         <address className="space-y-2 not-italic">
-          <p>{company.email}</p>
+          {/* <p>{company.email}</p> */}
           <p>{company.phone}</p>
           <p>{company.address}</p>
         </address>
