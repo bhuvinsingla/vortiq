@@ -23,16 +23,6 @@ export default function Hero() {
       <div aria-hidden className="bg-grid absolute inset-0" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2">
         <div>
-          <p
-            className="hero-enter mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-white/80"
-            style={{ animationDelay: "60ms" }}
-          >
-            <span className="relative flex size-2">
-              <span className="absolute inset-0 rounded-full bg-brand opacity-60 pip-pulse" />
-              <span className="relative size-2 rounded-full bg-brand" />
-            </span>
-            Now taking new projects
-          </p>
           <h1
             className="hero-enter text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.08] tracking-tight"
             style={{ animationDelay: "140ms" }}
